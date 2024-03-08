@@ -54,3 +54,31 @@ $(window).on("load", function() {
         }), !1
     })
 })
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    // Prevent the form from submitting normally
+    event.preventDefault();
+
+    // Perform an AJAX (asynchronous) request to submit the form data
+    var formData = new FormData(this);
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", this.action, true);
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            // Form submitted successfully, display a message to the user
+            alert("We appreciate your support in shaping the future of education through innovation and collaboration.Let's work together to make a difference!");
+
+            // Clear form fields
+            document.getElementById("contact-form").reset();
+        } else {
+            // Error handling
+            alert("There was an error submitting the form. Please try again later.");
+        }
+    };
+    xhr.onerror = function() {
+        // Error handling
+        alert("There was a network error. Please try again later.");
+    };
+    xhr.send(formData);
+});
+

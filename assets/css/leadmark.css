@@ -1,17 +1,5 @@
 @charset "UTF-8";
-/*!
-=========================================================
-* LeadMark Landing page
-=========================================================
 
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 :root {
   --blue: #007bff;
@@ -512,6 +500,26 @@ mark,
   font-size: 90%;
   color: #6c757d;
 }
+
+.pb-5, .py-5 {
+  padding-bottom: 3rem !important;
+}
+
+.pt-5, .py-5 {
+  padding-top: 3rem !important;
+}
+
+.container-sm, .container-md, .container-lg, .container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-height: 50dvh
+  
+}
+
+
 
 code {
   font-size: 87.5%;
@@ -10775,6 +10783,10 @@ button.bg-dark:focus {
   color: #fff !important;
 }
 
+.text-white2 {
+  color: #383d41 !important;
+}
+
 .text-primary {
   color: #ff6e42 !important;
 }
@@ -11644,9 +11656,12 @@ textarea.form-control {
   padding: 80px 0;
 }
 
+
 .section:nth-child(even) {
   background: #f5f8fc;
 }
+
+
 
 .section .section-devider {
   display: block;
@@ -11654,19 +11669,26 @@ textarea.form-control {
   margin: 50px 0;
 }
 
+
 .section .section-devider.transparent {
   background-color: transparent;
 }
+
+
 
 .section.py-sm {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
 }
 
+
+
 .section.py-lg {
   padding-top: 140px !important;
   padding-bottom: 140px !important;
 }
+
+
 
 .section .section-subtitle {
   font-size: calc(13px + (13 - 13) * ((100vw - 320px) / (1200 - 320)));
@@ -11675,21 +11697,30 @@ textarea.form-control {
   opacity: .9;
 }
 
+
+
 .section .section-title {
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
   padding-bottom: 7px;
   font-weight: 600;
 }
 
+
+
 .section .components-section-title {
   font-size: calc(18px + (23 - 18) * ((100vw - 320px) / (1200 - 320)));
   margin-bottom: 15px;
 }
 
+
+
+
+
 @media (min-width: 992px) {
   .section .components-section-title {
     font-size: 23px;
   }
+  
 }
 
 .section .section-secondary-title {
@@ -11698,14 +11729,20 @@ textarea.form-control {
   margin-bottom: 15px;
 }
 
+
+
 .section.has-overlay {
   position: relative;
 }
+
+
 
 .section.has-overlay * {
   position: static;
   z-index: 9;
 }
+
+
 
 .section.has-overlay:after {
   content: '';
@@ -11719,6 +11756,7 @@ textarea.form-control {
   z-index: 1;
 }
 
+
 .section.has-img-bg {
   position: relative;
   background: url(../imgs/section.jpg) no-repeat center top fixed;
@@ -11726,10 +11764,12 @@ textarea.form-control {
   color: #fff;
 }
 
+
 .section.has-img-bg * {
   position: relative;
   z-index: 100;
 }
+
 
 .section.has-img-bg:after {
   content: '';
@@ -11741,6 +11781,8 @@ textarea.form-control {
   background: rgba(0, 0, 0, 0.8);
   z-index: 1;
 }
+
+
 
 .portfolio-section .filters {
   border: 2px solid #dee2e6;
