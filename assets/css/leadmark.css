@@ -11186,7 +11186,6 @@ textarea.form-control {
 }
 
 
-
 .mouse-icon .wheel {
   position: relative;
   border-radius: 10px;
@@ -11399,6 +11398,7 @@ textarea.form-control {
   margin: 0;
 }
 
+
 .footer .brand {
   font-size: 20px;
   font-weight: bold;
@@ -11449,11 +11449,13 @@ textarea.form-control {
   overflow: hidden;
 }
 
+
+
 .header2 {
   position: relative;
   height: 75vh;
   min-height: 500px;
-  background: url(../imgs/contactpage.jpg) no-repeat center center fixed;
+  background: url(../imgs/Community.jpg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
@@ -11465,11 +11467,21 @@ textarea.form-control {
   background-size: cover;
   overflow: hidden;
 }
+
 .header4 {
   position: relative;
   height: 75vh;
   min-height: 500px;
   background: url(../imgs/heading4.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header5 {
+  position: relative;
+  height: 75vh;
+  min-height: 500px;
+  background: url(../imgs/contactpage.jpg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
@@ -11617,6 +11629,32 @@ textarea.form-control {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.header5 .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 .header .overlay .subtitle {
   font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1200 - 320)));
@@ -11655,6 +11693,15 @@ textarea.form-control {
   text-align: center;
   opacity: .8;
 }
+.header5 .overlay .subtitle {
+  font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1200 - 320)));
+  font-weight: 400;
+  margin-bottom: 0;
+  letter-spacing: 8px;
+  word-spacing: 10px;
+  text-align: center;
+  opacity: .8;
+}
 
 
 .header .overlay .title {
@@ -11671,6 +11718,10 @@ textarea.form-control {
   font-weight: bold;
 }
 .header4 .overlay .title {
+  font-size: calc(30px + (70 - 30) * ((100vw - 320px) / (1200 - 320)));
+  font-weight: bold;
+}
+.header5 .overlay .title {
   font-size: calc(30px + (70 - 30) * ((100vw - 320px) / (1200 - 320)));
   font-weight: bold;
 }
@@ -11704,6 +11755,13 @@ textarea.form-control {
   width: 100%;
   z-index: 9;
 }
+.header5 .shape svg {
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
 
 .header .shape svg path {
   fill: #fff;
@@ -11718,6 +11776,9 @@ textarea.form-control {
 .header4 .shape svg path {
   fill: #fff;
 }
+.header5 .shape svg path {
+  fill: #fff;
+}
 
 @media (max-width: 1199.98px) {
   .header .shape svg {
@@ -11740,6 +11801,11 @@ textarea.form-control {
     bottom: -15px;
   }
 }
+@media (max-width: 1199.98px) {
+  .header5 .shape svg {
+    bottom: -15px;
+  }
+}
 
 @media (max-width: 767.98px) {
   .header .shape svg {
@@ -11759,6 +11825,12 @@ textarea.form-control {
 
 @media (max-width: 767.98px) {
   .header4 .shape svg {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header5 .shape svg {
     bottom: 0;
   }
 }
@@ -11788,6 +11860,12 @@ textarea.form-control {
   dispaly: none;
   background-position: center -140px;
 }
+.header5.components-header {
+  max-height: 450px !important;
+  height: 450px;
+  dispaly: none;
+  background-position: center -140px;
+}
 
 .header.components-header .title {
   font-size: calc(40px + (90 - 40) * ((100vw - 320px) / (1200 - 320)));
@@ -11810,6 +11888,11 @@ textarea.form-control {
   font-weight: bold;
   margin-top: -8%;
 }
+.header5.components-header .title {
+  font-size: calc(40px + (90 - 40) * ((100vw - 320px) / (1200 - 320)));
+  font-weight: bold;
+  margin-top: -8%;
+}
 
 .header.components-header .shape svg path {
   fill: #f5f8fc;
@@ -11822,6 +11905,9 @@ textarea.form-control {
   fill: #f5f8fc;
 }
 .header4.components-header .shape svg path {
+  fill: #f5f8fc;
+}
+.header5.components-header .shape svg path {
   fill: #f5f8fc;
 }
 
